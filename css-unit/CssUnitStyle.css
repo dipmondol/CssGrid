@@ -1,0 +1,46 @@
+ main{
+    font-size: 16px;
+}
+.main{
+    font-size: 45px;
+}
+.main_para{
+    font-size: 22.5px;
+} 
+body,p{
+    margin: 0;
+    padding: 0;
+}
+
+.main_list{
+    font-size: 16px;
+}
+.main_list li{
+    font-size: 2em;
+}
+
+
+section{
+    background: rgb(49, 123, 165);
+    height: 50vh;
+    width: 30vw;
+}
+.parcentage{
+    width: 100%;
+    height: 350px;
+    background: palegreen;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.parcentage_inner{
+    width: 50%;
+    height: 150px;
+    background: rgb(45, 29, 133);
+}
+span{
+    background-color: rgb(221, 117, 122);
+    color: #fff;
+    font-size: 1em;
+}

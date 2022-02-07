@@ -1,0 +1,7 @@
+.grid{
+    --gap: 1em;
+    --columns: 4;
+    max-width: 60rem;
+    margin: 0 auto;
+
+}
