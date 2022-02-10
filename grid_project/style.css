@@ -14,9 +14,9 @@ html{
 body{
     background: #ccc;
     margin: 30px 50px;
-    line-height: 1.4;
+    line-height: 1.4rem;
 }
-.btn{
+.btn{   
     background: var(--dark);
     color: var(--light);
     padding: 0.6rem 1.3rem;
@@ -92,7 +92,7 @@ img{
 }
 .showcase p{
     font-size: 1.3rem;
-    margin-top: 0;
+    margin-bottom: 0;
     color: var(--light);
 }
 
@@ -180,7 +180,7 @@ footer{
     .info{
         grid-template-columns: 1fr;
     }
-    .inof .btn{
+    .info .btn{
         display: block;
         text-align: center;
         margin: auto;
