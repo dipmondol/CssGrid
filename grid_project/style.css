@@ -152,6 +152,79 @@ img{
     width: 100%;
 }
 
+/* Plan Section */
+.plan{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'starter-plan-box advanced-plan-box premium-plan-box';
+    justify-content: center;
+        
+   
+}
+.plan h4{
+    text-align: center;
+}
+.plan .price{
+    text-align: center;
+    font-style: bold;
+    font-size: 2rem;
+
+}
+.plan .price span{
+    font-size: 1rem;
+}
+.plan p{
+    line-height: 0.6rem;
+   
+}
+.starter-plan-box{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-radius: 2%;
+    justify-content: center;
+    
+   
+}.advanced-plan-box{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-radius: 2%;
+    justify-content: center;
+   
+  
+}.premium-plan-box{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-radius: 2%;
+    justify-content: center;
+   
+}
+
+.plan-btn{
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    padding: 0.8rem 1.3rem;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    box-shadow: var(--shadow);
+    
+   
+    
+}
+.plan-btn:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
+.active{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
 /* Footer */
 footer{
     margin-top: 2rem;
