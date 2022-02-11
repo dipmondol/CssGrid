@@ -3,6 +3,7 @@
     --primary: #ddd;
     --dark: #333;
     --light: #fff;
+    --red: #e33058;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 
 }
@@ -153,12 +154,17 @@ img{
 }
 
 /* Plan Section */
+.choose-plan{
+    text-align: center;
+    margin: 0;
+}
 .plan{
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: 'starter-plan-box advanced-plan-box premium-plan-box';
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
-        
+    padding: 1% 15%;
+    text-align: center;      
    
 }
 .plan h4{
@@ -173,9 +179,21 @@ img{
 .plan .price span{
     font-size: 1rem;
 }
-.plan p{
-    line-height: 0.6rem;
+.plan ul{
+  text-align: left;
+  margin: 20px 0;
+  list-style: none;
    
+}
+.plan ul li{
+    margin: 15px 0;
+
+}
+.plan ul li::before{
+    content: '\2022';
+    color: var(--red);
+    font-weight: bold;
+    margin-right: 8px;
 }
 .starter-plan-box{
     background: var(--primary);
@@ -203,7 +221,7 @@ img{
 }
 
 .plan-btn{
-    border: 1px solid var(--dark);
+    border: 1px solid var(--red);
     color: var(--dark);
     padding: 0.8rem 1.3rem;
     text-decoration: none;
@@ -212,18 +230,17 @@ img{
     display: block;
     text-align: center;
     box-shadow: var(--shadow);
-    
-   
+    margin-top: 30px;
+    transition: background 0.5s;
+     
     
 }
+
 .plan-btn:hover{
-    background-color: var(--dark);
+    background: var(--red);
     color: var(--light);
 }
-.active{
-    background-color: var(--dark);
-    color: var(--light);
-}
+
 
 /* Footer */
 footer{
