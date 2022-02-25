@@ -2,192 +2,280 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
-    <link rel="stylesheet" href="/grid_project/style.css">
-    <script src="https://kit.fontawesome.com/901c62251c.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid</title>
+  <link rel="stylesheet" href="/grid_project/style.css" />
+  <script src="https://kit.fontawesome.com/901c62251c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- navigation -->
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Top Container -->
-        <section class="top-container">
-            <header class="showcase">
-                <h1>Your Web Presence</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab esse sequi non omnis saepe.</p>
-                <a href="#" class="btn">Read More</a>
-            </header>
-            <div class="top-box top-box-a">
-                <h4>Membership</h4>
-                <p class="price">$199/mo</p>
-                <a href="" class="btn">Buy Now</a>
+  <div class="wrapper">
+    <!-- navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Top Container -->
+    <section class="top-container">
+      <header class="showcase">
+        <h1>Your Web Presence</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          ab esse sequi non omnis saepe.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </header>
+      <div class="top-box top-box-a">
+        <h4>Membership</h4>
+        <p class="price">$199/mo</p>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+      <div class="top-box top-box-b">
+        <h4>Pro Membership</h4>
+        <p class="price">$299/mo</p>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+    </section>
+    <!-- box section -->
+    <section class="boxes">
+      <div class="box">
+        <i class="fas fa-chart-pie fa-4x"></i>
+        <h3>Analytics</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          temporibus!
+        </p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe fa-4x"></i>
+        <h3>Marketing</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          temporibus!
+        </p>
+      </div>
+      <div class="box">
+        <i class="fas fa-cog fa-4x"></i>
+        <h3>Development</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          temporibus!
+        </p>
+      </div>
+      <div class="box">
+        <i class="fas fa-users fa-4x"></i>
+        <h3>Support</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          temporibus!
+        </p>
+      </div>
+    </section>
+    <!-- info section -->
+    <section class="info">
+      <img src="/images/house-1.png" alt="" />
+      <div>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+          amet?
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          beatae accusamus earum dolorum? Corrupti vitae officia ullam!
+          Explicabo, optio placeat?
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Plan Section -->
+    <h3 class="choose-plan">Choose Your Plan</h3>
+    <section class="plan">
+      <div class="starter-plan-box">
+        <h4>Starter</h4>
+        <p class="price">19$<span>/month</span></p>
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem amet.</li>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Lorem dolor sit amet.</li>
+          <li>Lorem ipsum sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem sit amet</li>
+        </ul>
+        <a href="#" class="plan-btn">Add To Cart</a>
+      </div>
+      <div class="advanced-plan-box">
+        <h4>Advanced</h4>
+        <p class="price">29$<span>/month</span></p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem amet.</li>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Lorem dolor sit amet.</li>
+          <li>Lorem ipsum sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem sit amet</li>
+        </ul>
+        <a href="#" class="active plan-btn">Add To Cart</a>
+      </div>
+      <div class="premium-plan-box">
+        <h4>Premium</h4>
+        <p class="price">49$<span>/month</span></p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem amet.</li>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Lorem dolor sit amet.</li>
+          <li>Lorem ipsum sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem sit amet</li>
+        </ul>
+        <a href="#" class="plan-btn">Add To Cart</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <div class="container">
+        <div class="box" style="--clr: #fc5f9b">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="color-palette-outline"></ion-icon>
             </div>
-            <div class="top-box top-box-b">
-                <h4>Pro Membership</h4>
-                <p class="price">$299/mo</p>
-                <a href="" class="btn">Buy Now</a>
+            <div class="text">
+              <h3>Website Designing</h3>
+              <p>5 Projects</p>
             </div>
-
-
-        </section>
-        <!-- box section -->
-        <section class="boxes">
-            <div class="box">
-                <i class="fas fa-chart-pie fa-4x"></i>
-                <h3>Analytics</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus!</p>
+          </div>
+        </div>
+        <div class="box" style="--clr: #a362ea">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="code-slash-outline"></ion-icon>
             </div>
-            <div class="box">
-                <i class="fas fa-globe fa-4x"></i>
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus!</p>
+            <div class="text">
+              <h3>Website Development</h3>
+              <p>3 Projects</p>
             </div>
-            <div class="box">
-                <i class="fas fa-cog fa-4x"></i>
-                <h3>Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus!</p>
+          </div>
+        </div>
+        <div class="box" style="--clr: #0ed095">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="earth-outline"></ion-icon>
             </div>
-            <div class="box">
-                <i class="fas fa-users fa-4x"></i>
-                <h3>Support</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus!</p>
+            <div class="text">
+              <h3>SEO</h3>
+              <p>6 Projects</p>
             </div>
-        </section>
-        <!-- info section -->
-        <section class="info">
-            <img src="/images/house-1.png" alt="">
-            <div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae accusamus earum dolorum?
-                    Corrupti vitae officia ullam! Explicabo, optio placeat?</p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Plan Section -->
-        <h3 class="choose-plan">Choose Your Plan</h3>
-        <section class="plan">
-            
-            <div class="starter-plan-box">
-                <h4>Starter</h4>
-                <p class="price">19$<span>/month</span></p>
-
-             <ul>
-                 <li>Lorem ipsum dolor sit amet.</li>
-                 <li>Lorem amet.</li>
-                 <li>Lorem ipsum dolor sit</li>
-                 <li>Lorem dolor sit amet.</li>
-                 <li>Lorem ipsum sit amet.</li>
-                 <li>Lorem ipsum dolor sit amet.</li>
-                 <li>Lorem sit amet</li>
-             </ul>
-                <a href="#" class="plan-btn">Add To Cart</a>
-
-            </div>
-            <div class="advanced-plan-box">
-                <h4>Advanced</h4>
-                <p class="price">29$<span>/month</span></p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem amet.</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem dolor sit amet.</li>
-                    <li>Lorem ipsum sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem sit amet</li>
-                </ul>
-                <a href="#" class="active plan-btn">Add To Cart</a>
-
-
-            </div>
-            <div class="premium-plan-box">
-                <h4>Premium</h4>
-                <p class="price">49$<span>/month</span></p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem amet.</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem dolor sit amet.</li>
-                    <li>Lorem ipsum sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem sit amet</li>
-                </ul>
-                <a href="#" class="plan-btn">Add To Cart</a>
-
-
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section class="projects">
-            <div class="container">
-                <div class="box" style="--clr:#fc5f9b;">
-                    <div class="content">
-                        <div class="icon"><ion-icon name="color-palette-outline"></ion-icon></div>
-                        <div class="text">
-                            <h3>Website Designing</h3>
-                            <p>5 Projects</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box" style="--clr:#a362ea;">
-                    <div class="content">
-                        <div class="icon"><ion-icon name="code-slash-outline"></ion-icon></div>
-                        <div class="text">
-                            <h3>Website Development</h3>
-                            <p>3 Projects</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box" style="--clr:#0ed095;">
-                    <div class="content">
-                        <div class="icon"><ion-icon name="earth-outline"></ion-icon></div>
-                        <div class="text">
-                            <h3>SEO</h3>
-                            <p>6 Projects</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- protfolio section -->
-        <section class="portfolio">
-            <img src="https://source.unsplash.com/random/200x200" alt="">
-            <img src="https://source.unsplash.com/random/201x200" alt="">
-            <img src="https://source.unsplash.com/random/203x200" alt="">
-            <img src="https://source.unsplash.com/random/204x200" alt="">
-            <img src="https://source.unsplash.com/random/205x200" alt="">
-            <img src="https://source.unsplash.com/random/206x200" alt="">
-            <img src="https://source.unsplash.com/random/207x200" alt="">
-            <img src="https://source.unsplash.com/random/208x200" alt="">
-        </section>
-
-        <!-- footer -->
-        <footer>
-            <p>Grid &copy;
-                <script>document.write(new Date().getFullYear())</script>
+    <!-- Flex -->
+    <section class="services">
+      <div class="box-area">
+        <!-- Web Design -->
+        <div class="single-box">
+          <div class="img-area"></div>
+          <div class="img-text">
+            <span class="header-text"><strong>Web Design</strong></span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Pariatur ad non, vero obcaecati quas repudiandae ratione
+              recusandae doloribus cupiditate commodi aspernatur nemo
+              necessitatibus, porro asperiores voluptates fugiat voluptatem
+              delectus rerum architecto similique vitae atque. Facilis,
+              debitis! Quae, nihil et praesentium mollitia, eveniet odit
+              debitis assumenda facilis quia fugit, sunt minima!
             </p>
-        </footer>
-    </div>
-    <!-- wrapper end -->
+          </div>
 
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
 
+        <!-- Graphic Design -->
+        <div class="single-box">
+
+          <div class="img-area"></div>
+          <div class="img-text">
+          <span class="header-text"><strong>Graphics Design</strong></span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Pariatur ad non, vero obcaecati quas repudiandae ratione
+            recusandae doloribus cupiditate commodi aspernatur nemo
+            necessitatibus, porro asperiores voluptates fugiat voluptatem
+            delectus rerum architecto similique vitae atque. Facilis,
+            debitis! Quae, nihil et praesentium mollitia, eveniet odit
+            debitis assumenda facilis quia fugit, sunt minima!
+          </p>
+        </div>
+      </div>
+
+        <!-- Email Marketing -->
+        <div class="single-box">
+          <div class="img-area"></div>
+          <div class="img-text">
+            <span class="header-text"><strong>Email Marketing</strong></span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Pariatur ad non, vero obcaecati quas repudiandae ratione
+              recusandae doloribus cupiditate commodi aspernatur nemo
+              necessitatibus, porro asperiores voluptates fugiat voluptatem
+              delectus rerum architecto similique vitae atque. Facilis,
+              debitis! Quae, nihil et praesentium mollitia, eveniet odit
+              debitis assumenda facilis quia fugit, sunt minima!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+  
+
+  <!-- protfolio section -->
+  <section class="portfolio">
+    <img src="https://source.unsplash.com/random/200x200" alt="" />
+    <img src="https://source.unsplash.com/random/201x200" alt="" />
+    <img src="https://source.unsplash.com/random/203x200" alt="" />
+    <img src="https://source.unsplash.com/random/204x200" alt="" />
+    <img src="https://source.unsplash.com/random/205x200" alt="" />
+    <img src="https://source.unsplash.com/random/206x200" alt="" />
+    <img src="https://source.unsplash.com/random/207x200" alt="" />
+    <img src="https://source.unsplash.com/random/208x200" alt="" />
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>
+      Grid &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </p>
+  </footer>
+  </div>
+  <!-- wrapper end -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
