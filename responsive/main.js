@@ -1,1 +1,5 @@
-console.log('output');
+console.log("output");
+
+const name = "adam";
+
+const color = "blue";
