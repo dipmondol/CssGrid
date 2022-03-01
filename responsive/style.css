@@ -14,16 +14,62 @@
 
 body {
   margin: 0;
-  color: var(--dark2);
+  color: black;
   font-size: 1.125rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Typography */
-
-.article-title{
-    font-family: ;
+img{
+  max-width: 100%;
+  display: block;
 }
+/* Typography */
+h1,
+h2,
+h3,
+.article-title{
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--darkBlue);
+}
+h1{
+  font-size: 2rem;
+  margin: 0;
+}
+a{
+  color: var(--blue);
+  font-weight: bolder;
+}
+a:hover,
+a:focus{
+  color: var(--darkBlue);
+}
+strong{
+  font-weight: 700;
+}
+.article-title{
+  font-size: 1.5rem;
+}
+.article-read-more,
+.article-info{
+  font-size: .875rem;
+}
+
+.article-read-more{
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+.article-read-more:hover,
+.article-read-more:focus{
+  color: var(--darkBlue);
+ 
+}
+
+.article-info{
+  margin: 2em 0;
+}
+
 /* Typography */
 
 
@@ -88,8 +134,11 @@ nav a:focus {
 .current-page:hover {
   color: #707070;
 }
-@media (max-width: 675px) {
-  .container-nav {
+ @media (max-width: 675px) {
+  .container-nav{
+    flex-direction: column;
+  }
+  .container-flex{
     flex-direction: column;
   }
   header {
@@ -109,6 +158,83 @@ nav a:focus {
   }
 }
 
+@media (min-width: 675px){
+  .container-flex{
+    flex-direction: row;
+  }
+  main{
+    width: 75%;
+  }
+  aside{
+    width: 20%;
+  }
+}
 /* End Nav Bar */
 
-/*  */
+
+/* Start Layout */
+.container{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* End Layout */
+
+/* articles */
+.article-featured{
+  border-bottom: var(--dark2) 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  text-align: justify;
+
+   
+}
+.article-recent{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.article-recent-main{
+  order: 2;
+
+}
+.article-recent-secondary{
+
+  order: 1;
+}
+
+@media (min-width: 675px){
+  .article-recent{
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  .article-recent .article-title{
+    margin-top: 0;
+  }
+  .article-recent-main{
+    width: 68%;
+    padding: 0 10px;
+    text-align: justify;
+    
+  }
+  .article-recent-secondary{
+    width: 38%;
+  }
+  .article-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+  }
+  .article-info{
+    margin-top: 10px;
+  }
+}
+
+/* End Articles */
