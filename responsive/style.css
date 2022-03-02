@@ -22,6 +22,7 @@ img{
   max-width: 100%;
   display: block;
 }
+
 /* Typography */
 h1,
 h2,
@@ -274,4 +275,17 @@ nav a:focus {
   order: -1;
 }
 
+
 /* End Widget */
+
+/* Footer */
+footer{
+  background: var(--darkBlue);
+  color: var(--white);
+  text-align: center;
+  padding: 2em 0;
+}
+/* End Footer */
+
+
+
