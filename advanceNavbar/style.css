@@ -85,6 +85,9 @@ i {
   justify-content: center;
 }
 
+.d-grid{
+display: grid;
+}
 .header {
   background-color: var(--dark-color);
 }
@@ -96,7 +99,6 @@ i {
 .logo {
   font-family: "Rock Salt", cursive;
   font-weight: bold;
-  color: rgb(243, 239, 239);
   font-size: var(--font-size-large);
 }
 
@@ -127,11 +129,15 @@ i {
   display: flex;
   flex-direction: column;
   gap: var(--gap-small);
+  color: white;
+  
 }
 .list-link {
   display: inline-block;
   font-size: var(--font-size-small);
-  color: #171721;
+  color: var(--dark-color);
+  
+
   padding: 1rem 1.5rem;
 }
 .current {
@@ -146,7 +152,7 @@ i {
   width: 2.5rem;
 }
 .dropdown-menu {
-  background-color: #eef0f8;
+  
   gap: 0;
   margin-left: 1.5rem;
   border-radius: 5px;
@@ -155,6 +161,8 @@ i {
   opacity: 0;
   pointer-events: none;
   transition: transform 0.5s;
+ 
+  
 }
 .dropdown > .list-link i{
     transition: transform .25s;
@@ -180,3 +188,45 @@ i {
 }
 
 /* Reuseable Classes */
+
+/* First Content */
+
+.card{
+  background-color: var(--dark-color);
+  padding: 2.5rem;
+  border-radius: .4rem;
+  height: 600px;
+  width: 400px;
+  box-shadow: 0 0 3rem 0 rgba(82, 63, 105, .1);
+}
+.title{
+  font-size: var(--font-size-normal);
+  margin-bottom: var(--margin-small);
+}
+.independent-title{
+  font-size: var(--font-size-medium);
+  color: var(--light-color);
+  padding: 2.5rem 0 1.25rem;
+}
+.main-title{
+  font-size: var(--font-size-large);
+}
+.card-header{
+  padding-block: 1rem;
+  margin-bottom: var(--margin-medium);
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+.card-header small{
+  font-size: 1.2rem;
+  color: #7e8299;
+}
+.card-header .title{
+  margin-bottom: 0;
+}
+.card-image{
+ 
+}
+.card-description{
+  font-size: var(--font-size-small);
+  margin-bottom: var(--margin-small);
+}
