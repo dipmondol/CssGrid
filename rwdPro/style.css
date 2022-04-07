@@ -50,6 +50,7 @@ p {
 .container {
   margin-inline: auto;
   width: min(90%, 70.5rem);
+ 
 }
 .container--narrow {
   max-width: 34rem;
@@ -57,6 +58,12 @@ p {
 .head .container p,
 h1 {
   text-align: center;
+}
+.head .container p{
+  letter-spacing: .8em;
+  font-size: .6em;
+  text-transform: uppercase;
+  
 }
 header,
 section {
@@ -83,7 +90,7 @@ section {
 }
 
 img {
-  height: 200px;
+  height: 300px;
   max-width: 100%;
   display: block;
   object-fit: cover;
@@ -106,5 +113,9 @@ img {
   }
   .split > * + * {
     margin-left: 2em;
+  }
+  .split  img{
+  margin: 0;
+    
   }
 }
