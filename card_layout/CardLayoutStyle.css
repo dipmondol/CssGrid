@@ -1,15 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Playfair+Display:ital,wght@0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap");
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-    background-color: rgb(41, 40, 40);
+:root {
+  --dark: #292929;
+  --lightDark: #616161;
+  --white: #ffffff;
+  --orange: #fe8529;
+  --yellow: #eeb34b;
+  --red: #e3394b;
+  --lightRed: #fe4c6f;
+  --darkBlue: #1d3557;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-background: #ffffff;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-primary: #7380ec;
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow-admin: 0 2rem 3rem var(--color-light);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
 
-.cardItem{
-    flex-basis: 25%;
-    padding-left: 8px;
-    padding-right: 8px;
+html {
+  font-size: 62.5%;
+}
+.container {
+  min-height: 100vh;
+  
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 9rem);
+  grid-template-rows: repeat(2, 9rem);
+  justify-items: center;
+  align-items: center;
+  
+  
+  
+}
+.container > div {
+
+  font-size: 1.6rem;
+  color: var(--white);
+}
+.container > div:nth-child(odd){
+  background: cadetblue;
+
+}
+.container > div:nth-child(even){
+  background: var(--color-danger);
+}
+.container > div:last-child {
+  margin-bottom: 0;
+}
+
+.one {
+  
+}
+.two {
+}
+.three {
+}
+.four {
+}
+
+.eight {
 }
 
