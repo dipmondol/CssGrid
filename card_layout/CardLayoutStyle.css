@@ -98,6 +98,7 @@ header {
 main {
   grid-area: main;
   padding: 1rem;
+ 
 }
 main .card .card-content {
   font-size: 1.4rem;
@@ -107,7 +108,7 @@ aside {
   grid-area: aside;
   background: #e6e9ee;
   padding: 1rem;
-  width: 70%;
+  width: 100%;
   text-align: justify;
   margin-top: 1rem;
   font-size: 1.4rem;
@@ -144,32 +145,51 @@ main .card-content{
   grid-area: card-content;
 }
 @media (max-width: 960px){
-  main .card{
+ main .card{
+   display: flex; 
+   flex-direction: column;
+  } 
+
+  .mainLayout{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr;
-    grid-area: 
-    "img img"
-    "card-title card-content";
-
-
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: 10rem 50vh auto 10rem 40rem;
+  
+    grid-template-areas:
+      "header header header header"
+      "hero hero hero hero"
+      ". main main ."
+      ". aside aside .";
   }
-  main .card img {
-    /* grid-area: img; */
-    grid-column: 1 / span 12;
-    height: 15rem;
+  main{
+    grid-area: main;
+    padding: 0;
+  }
+  aside {
+    grid-column: aside;
+    background: #e6e9ee;
     width: 100%;
-    object-fit: cover;
-  }
-  main .card .card-title{
-    /* grid-area: card-title; */
-    grid-column: 1 / span 12;
-  }
-  main .card .card-content{
-    /* grid-area: card-content; */
-    grid-column: 1 / span 12;
+    height: 30rem;
+    
+    text-align: justify;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    box-shadow: var(--box-shadow);
+    box-sizing: border-box;
+  
+   
+   
   }
 
+}
+@media (max-width: 660px){
+
+ aside {
+  width: 100%;
+  height: 42rem;
+  
+ }
 }
 
 
@@ -188,6 +208,7 @@ main .card-content{
 .text {
   text-align: justify;
   padding: 0.5rem;
+  font-size: 1.4rem;
 }
 .banner img {
   display: grid;
