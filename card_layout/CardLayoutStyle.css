@@ -217,7 +217,7 @@ main .card-content{
 
   object-fit: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .container {
     display: grid;
     grid-auto-flow: row;
