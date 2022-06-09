@@ -118,6 +118,112 @@
     grid-row: span 2;
     grid-column: span 3;
 }
+.one{
+    background-image: url(https://source.unsplash.com/random);
+    background-color: var(--dark);
+    color: var(--white);
+   
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+.two{
+    background-image: url(//unsplash.it/800/600);
+    background-color: var(--dark);
+    color: var(--white);
+   
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+
+   
+
+}
+.three{
+    background-image: url(https://source.unsplash.com/random/800×600);
+    background-color: var(--dark);
+    color: var(--white);
+   
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+.four{
+    background-image: url(https://source.unsplash.com/random/300×300);
+    background-color: var(--dark);
+    color: var(--white);
+   
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+.five{
+    background-image: url(https://source.unsplash.com/random/);
+    background-color: var(--dark);
+    color: var(--white);
+   
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+.six{
+    background-image: url(https://source.unsplash.com/random/600x500);
+    background-color: var(--dark);
+    color: var(--white);
+   
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+
+.one::before{
+    content: '';
+    display: block;
+    background: var(--dark);
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all ease-in-out 300ms;
+}
+.one:hover::before{
+    opacity: 0.2;
+}
+.one:hover{
+    background-position: center;
+}
+.two::before{
+    content: '';
+    display: block;
+    background: var(--dark);
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all ease-in-out 300ms;
+}
+.two:hover::before{
+    opacity: 0.2;
+}
+.two:hover{
+    background-position: center;
+}
   /* media query */
 @media(min-width: 1500px){
     .sidebar{
@@ -125,6 +231,7 @@
     }
     nav a{
         display: block;
+        margin-right: none;
     }
 }
 @media(max-width: 620px){
@@ -132,9 +239,9 @@
         display: inline-block;
         font-size: 1.5rem;
     }
+   
     nav a{
-        margin: none;
+        display: block;
     }
-
 
 }
