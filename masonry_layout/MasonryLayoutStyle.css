@@ -67,7 +67,36 @@ body {
     height: 5rem;
     width: 5rem;
 } */
+/* =========ripple button===========*/
+.rippleBtn{
+  display: inline-grid;
+  place-items: center;
+  position: relative;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: hsl(200, 100%, 65%);
+  border: 3px solid currentColor;
+  cursor: pointer;
+  appearance: none;
+  isolation: isolate;
+}
 
+.rippleBtn::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: green;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+
+/* =========ripple button===========*/
 @media (min-width: 1530px) {
   
     .container {
